@@ -1,0 +1,32 @@
+.contenedor-imagenes {
+    display: flex;
+    flex-direction: row;
+    grid-area: center;
+    background-color: red;
+    height: 400px;
+    margin-top: 150px;
+  }
+
+  .imagen-1, .imagen-2, .imagen-3 {
+    flex: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagen-1 {
+    background-image: url('../../assets/img/imagen-1.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .imagen-2 {
+    background-image: url('../../assets/img/imagen-2.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .imagen-3 {
+    background-image: url('../../assets/img/imagen-3.jpg');
+    background-size: cover;
+    background-position: center center;
+  }

@@ -1,0 +1,47 @@
+.container-conoceme{
+    grid-area: presentation;
+    display: flex;
+    margin-top: 100px;
+    background-color: rgb(242, 242, 242);
+}
+
+
+.conoceme-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.conoceme-txt p {
+    margin-top: 50px;
+}
+
+.boton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+.boton:hover {
+    background-color: #007bff7c;
+}  
+
+  .conoceme-img {
+    display: flex;
+    margin: 0 40px;
+    width: 50%;
+    height: 500px;
+    background-image: url('../../assets/img/asesora.jpg');
+    background-size: cover;
+}
+
+

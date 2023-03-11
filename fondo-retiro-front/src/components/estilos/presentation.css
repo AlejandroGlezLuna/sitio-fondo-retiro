@@ -1,0 +1,45 @@
+.container-presentation{
+    grid-area: presentation;
+    display: flex;
+    margin-top: 150px;
+}
+
+.presentation-txt, .presentation-img {
+    flex: 1;
+    margin-right: 10px; 
+    padding: 40px 50px;
+
+}
+
+.presentation-txt p {
+    margin-top: 50px;
+}
+
+
+.presentation-img {
+    display: flex;
+    margin-right: 40px;
+    width: 100%;
+    height: 300px;
+    background-image: url('../../assets/img/presentation.jpg');
+    background-size: cover;
+}
+
+/* RESPONSIVE  */
+@media (max-width: 800px) {
+    .grid-container  {
+      grid-template-areas: 
+        'menu menu menu menu menu menu menu'
+        'header header header header header header' 
+        'presentation presentation presentation presentation presentation'
+        'footer footer footer footer footer footer';
+    }
+    .header {
+      height: 500px;
+    }
+    .presentation-txt  p {
+      margin-top: 0px;
+  }
+  
+  }
+
