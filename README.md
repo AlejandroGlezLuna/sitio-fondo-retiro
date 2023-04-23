@@ -1,8 +1,12 @@
 # sitio-fondo-retiro
 Es un sitio de asistencia para el fondo para el retiro con herramientas de accesibilidad y usabilidad
 
-Proyecto React en  rama Master
+Proyecto React iniciar con npm start
 
-Para iniciar proyecto: npm start
+Proyecto NodeJs iniciar con nodemon app
 
-Diseño creado temporalmente para desktop según avance del sprint actual
+Base de datos, usuario: root, contraseña: password, tabla: clientes
+
+Correo electrónico de prueba: exe.mail.udgvirtual@gmail.com   contraseña: password-123-eatrqv
+
+
