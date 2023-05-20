@@ -1,0 +1,125 @@
+.contenedor-agendar{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5vw;
+    background-color: rgb(242, 242, 242);
+    width: 80%;
+}
+
+
+.agendar-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    flex: 1;
+}
+
+.agendar-txt p {
+    margin-top: 1vw;
+}
+
+
+.boton-agendar {
+    background-color: #007bff7c;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+ }
+
+  .link-estilo {
+    color: #fff;
+  }
+
+.boton-agendar:hover {
+    background-color: #007bff;
+}  
+
+.agendar-img {
+    display: flex;
+    flex: 1;
+    margin-left: 1.5vw;
+    width: 50%;
+    background-image: url('../../assets/img/agendar.jpg');
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .contenedor-agendar{
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+        'imagen' 
+        'texto';
+    }
+    .agendar-txt{
+        grid-area: texto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .agendar-txt h2 {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .agendar-txt p {
+        padding: 20px;
+        margin-top: 0;
+    }
+    .agendar-img {
+        grid-area: imagen;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 1rem;
+    }
+    .agendar-txt .boton-agendar {
+        width: 90%;
+        margin: 30px;
+  }
+  }
+  
+  @media screen and (max-width: 767px){
+    .contenedor-agendar{
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+        'imagen' 
+        'texto';
+    }
+    .agendar-txt{
+        grid-area: texto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .agendar-txt h2 {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .agendar-txt p {
+        padding: 20px;
+        margin-top: 0;
+    }
+    .agendar-img {
+        grid-area: imagen;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .agendar-txt .boton-agendar {
+        width: 90%;
+        margin: 30px;
+  }
+}
+
+

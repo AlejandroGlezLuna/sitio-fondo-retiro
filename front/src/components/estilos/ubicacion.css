@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .contenedor-ubicacion {
+    margin: 0 auto;
+    margin-top: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    grid-auto-columns: minmax(0, 1fr);
+  }
+  
+  .texto-ubicacion {
+    grid-column: 1;
+  }
+  
+  .texto-ubicacion h2 {
+    margin: 1vw 0;
+    font-size: 24px; 
+  }
+
+  .texto-ubicacion p {
+    font-size: 16px;
+  }
+  
+  .imagen-ubicacion {
+    grid-column: 2;
+    
+  }
+  
+  .boton-ubicacion {
+    background-color: #3498db;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1vw;
+  }
+  
+  .link-ubicacion {
+    color: #fff;
+  }
+  
+  .boton-ubicacion:hover {
+    background-color:  #007bff7c;
+  }  
+  
+  .imagen-ubicacion {
+    margin: 0 0 0 50px;
+  }
+   
+  .imagen-ubicacion iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .oculta-ubicacion {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contenedor-ubicacion {
+      width: 100%;
+      display: flex;
+    }
+    .texto-ubicacion{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .texto-ubicacion h2 {
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .imagen-ubicacion{
+      display: none;
+    }
+     .oculta-ubicacion {
+      display: grid;
+      height: auto;
+      background-size: cover;
+      background-position: center center;
+      height: 80vw;
+      margin: 5vw 0 3vw;
+     }
+     iframe {
+      height: 80vw;
+      width: 100%;
+     }
+     .boton-ubicacion {
+      margin-top: 3vw;
+     }
+  }
+  
+  @media screen and (max-width: 767px)  {
+    .contenedor-ubicacion {
+      width: 100%;
+      display: flex;
+    }
+    .texto-ubicacion{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .texto-ubicacion h2 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .imagen-ubicacion{
+      display: none;
+    }
+     .oculta-ubicacion{
+      display: grid;
+      height: auto;
+      background-size: cover;
+      background-position: center center;
+      height: 80vw;
+      margin: 5vw 0;
+     }
+
+     iframe {
+      height: 80vw; 
+     }
+     .boton-ubicacion {
+      margin-top: 5vw;
+     }
+  }

@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.contenedor-asesora {
+  margin: 0 auto;
+  margin-top: 3vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  grid-auto-columns: minmax(0, 1fr);
+}
+
+.texto-asesora {
+  grid-column: 1;
+}
+
+.texto-asesora h2 {
+  margin: 1vw 0;
+  font-size: 24px;
+}
+
+.texto-asesora p {
+  font-size: 16px;
+}
+
+.imagen-asesora {
+  grid-column: 2;
+}
+
+.boton-asesora {
+  background-color: #3498db;
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 18px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1vw;
+}
+
+.link-asesora {
+  color: #fff;
+}
+
+.boton-asesora:hover {
+  background-color: #007bff7c;
+}  
+
+.imagen-asesora {
+  margin: 0 0 0 50px;
+  height: auto;
+  background-image: url('../../assets/img/asesora-imagen.jpg');
+  background-size: cover;
+  width: 80%;
+  background-position: center;
+}
+
+.oculta-asesora {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor-asesora {
+    width: 100%;
+    display: flex;
+  }
+  .texto-asesora{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .texto-asesora h2 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .imagen-asesora{
+    display: none;
+  }
+   .oculta-asesora {
+    display: grid;
+    height: auto;
+    background-image: url('../../assets/img/asesora-imagen.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 80vw;
+    margin: 5vw 0 3vw;
+   }
+   .boton-asesora {
+    margin-top: 3vw;
+   }
+}
+
+@media screen and (max-width: 767px)  {
+  .contenedor-asesora {
+    width: 100%;
+    display: flex;
+  }
+  .texto-asesora{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .texto-asesora h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .imagen-asesora{
+    display: none;
+  }
+   .oculta-asesora {
+    display: grid;
+    height: auto;
+    background-image: url('../../assets/img/asesora-imagen.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 80vw;
+    margin: 5vw 0;
+   }
+   .boton-asesora {
+    margin-top: 5vw;
+   }
+}

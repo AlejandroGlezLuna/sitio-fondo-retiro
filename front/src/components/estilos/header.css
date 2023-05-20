@@ -1,0 +1,43 @@
+.header {
+    background-size: cover;
+    background-position: center center;
+    padding: 3vw;
+    height: 25vw;
+    text-align: center;
+    grid-area: header;
+  }
+
+  .header h2 {
+    margin-top: 7vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    .header {
+      height: 40vw;
+    }
+    .header h2 {
+      padding-top: 4vw;
+      font-size: 8vw;
+    }
+    .header p {
+      display: none;
+     }
+  }
+  
+  @media screen and (max-width: 767px){
+    .header {
+      height: 50vw;
+    }
+
+    .header h2 {
+      padding-top: 12vw;
+      font-size: 8vw;
+    }
+    .header p {
+      display: none;
+     }
+  }

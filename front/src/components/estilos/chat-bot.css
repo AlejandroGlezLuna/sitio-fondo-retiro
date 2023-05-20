@@ -1,0 +1,78 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    z-index: 9999;
+    height: 570px;
+  }
+
+  .chatbot-button {
+    background-color: rgb(125, 125, 125);
+    font-size: 25px;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .chatbot-button:hover {
+    opacity: 1;
+  }
+
+  .rsc-container {
+    background-color: rgb(255, 255, 255);
+  }
+  .rsc-header {
+    background-color: #3498db;
+    color: #ffff;
+  }
+
+  .rsc-header h2 {
+    font-size: 1.5em;
+  }
+
+  .rsc-message-text {
+    color: #000000;
+  }
+  .rsc-ts-bubble {
+    background-color: rgba(227, 227, 227, 0.8);
+    font-size: 16px;
+    color: black;
+  }
+
+  .rsc-os-option-element {
+    background-color: rgba(174, 208, 238, 0.76);
+    font-size: 16px;
+    color: black;
+  }
+  .rsc-ts-bubble p {
+    font-size: 18px;
+    color: black;
+  }
+
+@media screen and (max-width: 768px) {
+    .chatbot-container {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 100%;
+      z-index: 9999;
+      height: 570px;
+    }
+  
+    .chatbot-button {
+      background-color: rgb(125, 125, 125);
+      font-size: 10px;
+      color: white;
+      border: none;
+      padding: 20px 20px;
+      border-radius: 9px;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  
+  }

@@ -1,0 +1,118 @@
+.contenedor-imagenes {
+  display: flex;
+  flex-direction: row;
+  grid-area: center;
+  height: 20vw;
+  margin-top: 5vw;
+}
+
+.imagen-1,
+.imagen-2,
+.imagen-3 {
+  flex: 1;
+  width: 100%;
+  height: auto;
+}
+
+.imagen-1 {
+  background-image: url('../../assets/img/imagen-1.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagen-3 {
+  background-image: url('../../assets/img/imagen-2.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagen-2 {
+  background-image: url('../../assets/img/imagen-3.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.contenedor-texto {
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor-imagenes {
+    margin-top: 5vw;
+    height: 50vw;
+  }
+
+  .imagen-1 {
+    background-image: url('../../assets/img/imagen-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: none;
+  }
+
+  .imagen-3 {
+    background-image: url('../../assets/img/imagen-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: none;
+  }
+
+  .imagen-2 {
+    background-image: url('../../assets/img/imagen-3.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 50vw;
+  }
+
+  .contenedor-texto {
+    display: flex;
+    margin-top: 5vw;
+  }
+
+  .contenedor-texto h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .contenedor-imagenes {
+    margin-top: 8vw;
+    height: 50vw;
+  }
+
+  .imagen-1 {
+    background-image: url('../../assets/img/imagen-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: none;
+  }
+
+  .imagen-3 {
+    background-image: url('../../assets/img/imagen-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: none;
+  }
+
+  .imagen-2 {
+    background-image: url('../../assets/img/imagen-3.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 50vw;
+  }
+
+  .contenedor-texto {
+    display: flex;
+    margin-top: 8vw;
+  }
+
+  .contenedor-texto h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0vw;
+  }
+}
